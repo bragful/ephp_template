@@ -1,13 +1,15 @@
 defmodule EphpTemplate.MixProject do
   use Mix.Project
 
+  @vsn "0.1.1"
+
   def project do
     [
       app: :ephp_template,
       name: "Ephp Template",
       description: "PHP Template for Phoenix Framework",
       package: package(),
-      version: "0.1.0",
+      version: @vsn,
       elixir: "~> 1.7",
       source_url: "https://github.com/bragful/ephp_template",
       start_permanent: Mix.env() == :prod,

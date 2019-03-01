@@ -4,6 +4,7 @@ defmodule Ephp.Template do
   The Phoenix engine that handles the `.php` extension.
   """
 
+  alias Ephp.Template, as: EphpTemplate
   alias :ephp, as: Ephp
   alias :ephp_config, as: EphpConfig
   alias :ephp_output, as: EphpOutput
@@ -126,10 +127,10 @@ defmodule Ephp.Template do
               |> EphpParser.parse()
               |> Macro.escape()
     quote do
-      Ephp.Template.run(unquote(path),
-                        unquote(name),
-                        unquote(content),
-                        var!(assigns))
+      EphpTemplate.run(unquote(path),
+                       unquote(name),
+                       unquote(content),
+                       var!(assigns))
     end
   end
 end
