@@ -4,8 +4,12 @@ defmodule EphpTemplate.MixProject do
   def project do
     [
       app: :ephp_template,
+      name: "Ephp Template",
+      description: "PHP Template for Phoenix Framework",
+      package: package(),
       version: "0.1.0",
       elixir: "~> 1.7",
+      source_url: "https://github.com/bragful/ephp_template",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -24,6 +28,18 @@ defmodule EphpTemplate.MixProject do
     [
       {:phoenix_html, "~> 2.10"},
       {:ephp, "~> 0.2"},
+    ]
+  end
+
+  defp package do
+    [
+      files: ["lib", "mix.exs", "mix.lock", "README*", "COPYING*"],
+      maintainers: ["Manuel Rubio"],
+      licenses: ["LGPL 2.1"],
+      links: %{
+        "GitHub" => "https://github.com/bragful/ephp_template",
+        "Bragful" => "https://bragful.com",
+      },
     ]
   end
 end

@@ -1,6 +1,5 @@
 # ephp template
 
-[![Build Status](https://img.shields.io/travis/bragful/ephp_template/master.svg)](https://travis-ci.org/bragful/ephp_template)
 [![License: LGPL 2.1](https://img.shields.io/github/license/bragful/ephp_template.svg)](https://raw.githubusercontent.com/bragful/ephp_template/master/COPYING)
 [![Gitter](https://img.shields.io/gitter/room/bragful/ephp.svg)](https://gitter.im/bragful/ephp)
 [![Hex](https://img.shields.io/hexpm/v/ephp_template.svg)](https://hex.pm/packages/ephp_template)
