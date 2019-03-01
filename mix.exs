@@ -28,6 +28,7 @@ defmodule EphpTemplate.MixProject do
     [
       {:phoenix_html, "~> 2.10"},
       {:ephp, "~> 0.2"},
+      {:ex_doc, ">= 0.0.0", only: :dev},
     ]
   end
 
